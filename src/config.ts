@@ -4,17 +4,17 @@ export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
     // site title
-    title: 'Retypeset',
+    title: 'jathon\'s blog',
     // site subtitle
-    subtitle: 'Revive the beauty of typography',
+    subtitle: '不想写代码',
     // site description
-    description: 'Retypeset is a static blog theme based on the Astro framework. Inspired by Typography, Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.',
+    description: '',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: true, // true, false
     // author name
-    author: 'radishzz',
+    author: 'Jathon',
     // site url
-    url: 'https://retypeset.radishzz.cc',
+    url: 'https://chenjia.xin',
     // favicon url
     // recommended formats: svg, png or ico
     favicon: '/icons/favicon.svg', // or https://example.com/favicon.svg
@@ -24,25 +24,18 @@ export const themeConfig: ThemeConfig = {
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   color: {
     // default theme mode
-    mode: 'light', // light, dark, auto
+    mode: 'auto', // light, dark, auto
     light: {
-      // primary color
-      // used for title, hover, etc
-      // oklch color picker: https://oklch.com/
-      primary: 'oklch(25% 0.005 298)',
-      // secondary color
-      // used for post text
-      secondary: 'oklch(40% 0.005 298)',
-      // background color
-      background: 'oklch(96% 0.005 298)',
+      // Rosé Pine Dawn (浅色主题)
+      primary: 'oklch(0.4 0.06 295)', // 主文本颜色 (#575279)
+      secondary: 'oklch(0.55 0.05 290)', // 次要文本颜色 (#797593)
+      background: 'oklch(0.95 0.01 40)', // 背景色 (#faf4ed)
+
     },
     dark: {
-      // primary color
-      primary: 'oklch(92% 0.005 298)',
-      // secondary color
-      secondary: 'oklch(77% 0.005 298)',
-      // background color
-      background: 'oklch(22% 0.005 298)',
+      primary: 'oklch(0.92 0.0172 280.05)',
+      secondary: 'oklch(0.79 0.0172 280.05)',
+      background: 'oklch(0.24 0.0172 280.05)',
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
@@ -53,7 +46,8 @@ export const themeConfig: ThemeConfig = {
     locale: 'zh', // zh, zh-tw, ja, en, es, ru, pt
     // more languages
     // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
+    // moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
+    moreLocales: ['en'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
@@ -89,7 +83,7 @@ export const themeConfig: ThemeConfig = {
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   seo: {
     // @twitter ID
-    twitterID: '@radishzz_',
+    twitterID: '@JathingChen',
     // site verification
     verification: {
       // google search console
@@ -136,16 +130,16 @@ export const themeConfig: ThemeConfig = {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        url: 'https://github.com/Jathing',
       },
       {
         name: 'X',
-        url: 'https://x.com/radishzz_',
+        url: 'https://x.com/JathingChen',
       },
       // {
       //   name: 'Email',
-      //   url: 'https://example@gmail.com',
-      // }
+      //   url: 'hi@chenjia.xin',
+      // },
     ],
     // year of website start
     startYear: 2024,
@@ -160,7 +154,7 @@ export const themeConfig: ThemeConfig = {
     // comment server url
     commentURL: 'https://retypeset-comment.radishzz.cc',
     // image hosting url
-    imageHostURL: 'https://image.radishzz.cc',
+    // imageHostURL: 'https://image.radishzz.cc',
     // custom google analytics js
     // for users who route analytics javascript to a customized domain
     // See https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
